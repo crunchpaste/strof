@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg185"
+   version="1.1"
+   viewBox="0 0 264.58333 264.58334"
+   height="1000"
+   width="1000">
+  <defs
+     id="defs179" />
+  <metadata
+     id="metadata182">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-32.41665)"
+     id="layer1">
+    <g
+       transform="matrix(0.9416852,0.9416852,-0.9416852,0.9416852,164.6602,-116.81445)"
+       id="g6318">
+      <rect
+         style="fill:none;stroke:#373737;stroke-width:5.12906933;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         x="121.26414"
+         y="94.54435"
+         class="st11"
+         width="22.055"
+         height="184.6465"
+         id="rect134" />
+      <path
+         style="fill:none;stroke:#373737;stroke-width:5.12906933;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         class="st11"
+         d="m 132.29168,290.73126 c 6.41134,0 11.0275,-5.12907 11.0275,-11.5404 h -22.055 c 0,6.41133 4.61616,11.5404 11.0275,11.5404 z"
+         id="path136" />
+      <polygon
+         transform="matrix(2.5645347,0,0,2.5645347,-215.71567,-76.510104)"
+         style="fill:none;stroke:#373737;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         class="st11"
+         points="135.7,44.7 140,66.7 135.7,66.7 131.4,66.7 "
+         id="polygon140" />
+      <line
+         style="fill:none;stroke:#373737;stroke-width:5.12906933;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         class="st11"
+         x1="132.29167"
+         y1="279.96021"
+         x2="132.29167"
+         y2="94.54435"
+         id="line142" />
+      <polygon
+         transform="matrix(2.5645347,0,0,2.5645347,-215.71567,-76.510104)"
+         style="fill:#373737;fill-opacity:1;stroke:#373737;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1"
+         class="st13"
+         points="135.7,44.7 137.6,54.7 133.8,54.7 "
+         id="polygon144" />
+    </g>
+    <path
+       style="fill:#ff3b3f;fill-opacity:1;stroke-width:3.08476377"
+       id="path48"
+       d="m 26.390143,73.388159 c 0,0 18.104438,-17.668186 42.752655,5.235011 0,0 -8.506911,-15.923171 -49.296427,-25.738833 0.218132,-0.218132 2.399385,11.560663 6.543772,20.503822 z" />
+    <path
+       id="path46"
+       d="m 70.233425,102.83513 c 0,0 -11.560674,11.56067 -28.356355,-5.23501 C 25.081387,80.804433 19.846378,52.44808 19.846378,52.44808 c 0,0 28.792592,4.798773 45.588277,21.594457 16.795678,16.795683 4.79877,28.792593 4.79877,28.792593"
+       class="st6"
+       style="fill:none;stroke:#373737;stroke-width:6.16952753;stroke-miterlimit:10;stroke-opacity:1" />
+    <rect
+       transform="rotate(-45)"
+       id="rect106"
+       height="222.10303"
+       width="26.528973"
+       class="st11"
+       y="128.54747"
+       x="-36.008884"
+       style="fill:#f5f5f5;fill-opacity:1;stroke:#373737;stroke-width:6.16952753;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       id="path108"
+       d="m 241.68026,273.84572 c 5.45315,-5.45314 5.01689,-13.74192 -0.43623,-19.19507 l -18.75883,18.75882 c 5.45314,5.45314 13.74191,5.88941 19.19506,0.43625 z"
+       class="st11"
+       style="fill:none;stroke:#373737;stroke-width:6.16952753;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+    <path
+       id="path114"
+       d="M 241.68026,273.84572"
+       class="st12"
+       style="fill:none;stroke:#000000;stroke-width:6.16952753;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+  </g>
+</svg>
