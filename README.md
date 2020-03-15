@@ -1,2 +1,2 @@
 # strof
-A public repository for the strof.co website
+A public repository for the [strof.co](https://strof.co) website
