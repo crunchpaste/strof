@@ -178,7 +178,7 @@ a {
 
 .mainScreen {
   margin: 0;
-  background-image: url(../media/iconGrid.svg);
+  background-image: url(../media/iconGridMin.svg);
   /* background-repeat: no-repeat; */
   background-position: center top;
   background-size: 30%;
@@ -484,6 +484,7 @@ a {
 }
 
 .teamMemberName h3, .teamMemberName h2 {
+
   padding: .5rem 0;
   margin: 0;
   font-size: .8rem;
@@ -491,6 +492,7 @@ a {
   text-align: left;
   margin-left: 5%;
   color: white;
+  line-height: 1.6;
 }
 
 .teamMember picture, .teamMember img {
