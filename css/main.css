@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
   margin: 0;
   overflow-x: hidden;
-  background-color: #ededed;
+  background-color: #F8F9FA;
 }
 
 /* Global Settings
@@ -46,10 +46,12 @@ h1 {
   font-family: "roboto-webfont", Arial, sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1;
+  letter-spacing: -.1rem;
   text-align: center;
   color: #232931;
+  text-shadow:
   /* border-bottom: 10px solid #DD1438; */
 }
 
@@ -59,7 +61,7 @@ h1 {
   content: '';
   width: 55%;
   height: .5rem;
-  background-color: #ededed;
+  background-color: #F8F9FA;
   display: block;
   margin: 0 auto;
 } */
@@ -106,7 +108,7 @@ a {
   padding-bottom: 1vh;
   position: fixed;
   width: 100%;
-  background-color: #ededed;
+  background-color: #F8F9FA;
   z-index: 5;
 }
 .home {
@@ -178,13 +180,13 @@ a {
 
 .mainScreen {
   margin: 0;
-  background-image: url(../media/iconGridMin.svg);
-  /* background-repeat: no-repeat; */
+  background-image: url("../media/iconGrid.svg");
+  background-repeat: repeat;
   background-position: center top;
   background-size: 30%;
   z-index: 1;
   padding-bottom: 3rem;
-
+  /* min-height: calc(100vw + 50px) */
 }
 
 .welcomeContent {
@@ -192,18 +194,18 @@ a {
   text-align: center;
   width: 100%;
   /* margin: auto; */
-  padding-top: 12vh;
+  padding-top: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-
+  padding-bottom: 10vh;
 }
 
 .welcomeContent p {
   width: 80%;
   margin: 0 auto;
-  color: gray;
+  /* color: gray; */
   font-size: 1rem;
   margin-top: 3rem;
 }
@@ -228,11 +230,68 @@ a {
 }
 
 @media (min-width: 700px) {
+
+  h1 {
+    text-align: left;
+    font-size: 4rem;
+  }
+  #test1 {
+    font-size: 1.3rem;
+    margin: 0;
+    width: 75%;
+    margin-top: 1.3rem;
+  }
   #logo {
+    width: 100%;
     max-height: 40vh;
   }
-}
+  .mainScreen {
+    padding: 5vw 0;
+    background-image: url("../media/gogh.webp"), url("../media/iconGrid.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom, center top;
+    background-size: contain, 10%;
+    z-index: 1;
+    min-height: 100vh;
+    /* background-image: url("../media/gogh.webp"); */
+  }
+  .welcomeContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    max-width: 1500px;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: left;
+  }
+  hr {
+    visibility: hidden;
+  }
+  .sloganAndDesc {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .logoHolder {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: left;
+  }
+  .logoHolder svg {
+    margin-right: auto;
+  }
+  .logoHolder {
+    margin-right: auto;
+  }
+  .logoHolder span {
+    display: none;
+  }
 
+
+}
 
 /* =========== SERVICES =========== */
 
@@ -275,7 +334,7 @@ a {
 .serviceBox {
   /* box-shadow: .5rem .5rem .75rem rgba(0, 0, 0, .15); */
   margin-top: 9vh;
-  background-color: #EDEDED;
+  background-color: #F8F9FA;
 }
 
 /* .serviceBox::after {
@@ -352,8 +411,8 @@ a {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    margin: 0 1vw;
     box-shadow: .5rem .5rem .75rem rgba(0, 0, 0, .15);
+    max-width: 32%;
   }
   .serviceBox:last-child {
     padding-bottom: 0;
@@ -430,15 +489,6 @@ a {
   flex-direction: column;
 }
 
-@media (min-width: 700px) {
-  .team {
-    flex-direction: row;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .teamCaption {
   font-family: "roboto-webfont", Arial, sans-serif;
   text-align: center;
@@ -456,7 +506,7 @@ a {
   background-color: #DD1438;
   display: block;
   margin: 0 auto;
-  margin-top: -.5rem;
+  /* margin-top: .25rem; */
 }
 
 
@@ -469,7 +519,7 @@ a {
   object-fit: contain;
   width: 105%;
   overflow-x: hidden;
-  background: #ededed;
+  background: #F8F9FA;
   margin-bottom: -5px;
   display: none;
 }
@@ -539,6 +589,24 @@ a {
   to {
     margin-right: 1rem;
   }
+}
+
+@media (min-width: 700px) {
+  .team {
+    flex-direction: row;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    max-width: 750px;
+  }
+  .teamCaption, .teamCaptionDark {
+    font-size: 3rem;
+  }
+  .teamCaption::after {
+    margin-top: .4rem;
+  }
+
 }
 
 .teamDescript {
