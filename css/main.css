@@ -179,14 +179,23 @@ a {
 /* =========== HERO =========== */
 
 .mainScreen {
-  margin: 0;
-  background-image: url("../media/iconGrid.svg");
+  padding: 5vw 0;
+  background-image: url("../media/goghCo.webp"), url("../media/iconGrid.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right top, center top;
+  background-size: cover, 30%;
+  z-index: 1;
+  padding-bottom: 3rem;
+  max-height: 100vh;
+  /* margin: 0;
+  background-image: url("../media/iconGrid.svg"),url();
   background-repeat: repeat;
   background-position: center top;
   background-size: 30%;
   z-index: 1;
   padding-bottom: 3rem;
-  /* min-height: calc(100vw + 50px) */
+  max-height: 100vh;
+  /* min-height: calc(100vw + 50px) */ */
 }
 
 .welcomeContent {
@@ -247,7 +256,7 @@ a {
   }
   .mainScreen {
     padding: 5vw 0;
-    background-image: url("../media/gogh.webp"), url("../media/iconGrid.svg");
+    background-image: url("../media/goghCo.webp"), url("../media/iconGrid.svg");
     background-repeat: no-repeat, repeat;
     background-position: right bottom, center top;
     background-size: contain, 10%;
