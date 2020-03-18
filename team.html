@@ -32,7 +32,8 @@
     <section class="teamPage">
       <h1 class="teamCaptionDark">Нашият Екип</h1>
       <div class="team">
-        <div class="teamMember" id="PavelLefterov">
+        <a href="#" id="PavelLefterov"></a>
+        <div class="teamMember">
           <picture>
             <source srcset="media/pavelSmall.webp">
             <source srcset="media/pavelSmall.jpg">
@@ -42,7 +43,58 @@
             <h2>ПАВЕЛ ЛЕФТЕРОВ</h2>
           </div>
           <div class="teamDescript">
-            <p>Роден през 1994г.</p> 0 0
+            <div class="cv">
+              <h3>Образование</h3>
+              <p>
+                <strong class="year">2020</strong> Зачислен като <strong>докторант</strong> с направление "Методика на <strong>обучението по изобразително изкуство"</strong> в СУ "Климент Охридски"
+                </p>
+                <p>
+                <strong class="year">2018</strong> Завършва <strong>магистърска</strong> програма "<strong>Семиотика и педагогика</strong> на изобразителното изкуство" в СУ "Климент Охридски"
+                </p>
+                <p>
+                <strong class="year">2016</strong> Завършва <strong>бакалавърска</strong> програма <strong>Fine art: Painting</strong> в Univesity of the arts London, Wimbledon college of art
+                </p>
+                <p>
+                <strong class="year">2013</strong> Завършва специалност "<strong>Живопис</strong>" в НУИИ "Илия Петров"</p>
+                </p>
+                <p>
+                <h3>Подбрани групови изложби</h3>
+                <p><strong class="year">2019</strong> <strong>On the edge</strong>, Стубел, София
+                </p>
+                <p>
+                <strong class="year">2018</strong> <strong>Дипломна изложба</strong>, Софийски университет, София
+                </p>
+                <p>
+                <strong class="year">2016</strong> <strong>Fusion Art Fest</strong>, Underground, София
+                </p>
+                <p>
+                <strong class="year">2016</strong> <strong>WCA BA Graduation Show</strong>, WCA, Лондон
+                </p>
+              <p>
+                <strong class="year">2015</strong> <strong>Project Berlin</strong>, Берлин
+                </p>
+                <p>
+                <strong class="year">2015</strong> <strong>BAZA</strong>, СГХГ, София
+                </p>
+                <p>
+                <strong class="year">2014</strong> <strong>London Calling 014</strong>, Truman brewery, Лондон
+                </p>
+                <p>
+                <strong class="year">2014</strong> <strong>ArtCube Art Fair</strong>, Лондон
+                </p>
+                <p>
+                <strong class="year">2013</strong> <strong>ESSL Art Award</strong>, галерия Академия, София
+                </p>
+                <p>
+                <strong class="year">2012</strong> <strong>BAZA</strong>, СГХГ, София
+                </p>
+                <p>
+                <strong class="year">2011</strong> <strong>Св. Св. Кирил и Методий</strong>, СБХ, София
+                </p>
+                <p>
+                <strong class="year">2011</strong> <strong>ARTPARIS 2011</strong>, Grand Palais, Париж</p>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -70,6 +122,35 @@
           text-transform: uppercase;
           margin-top: 5vh;
           margin-bottom: 7vh;
+        }
+        @media (min-width: 700px) {
+          .team {
+            max-width: 1100px;
+          }
+          .teamMember {
+            display: grid;
+            grid-template-columns: 300px auto;
+            grid-gap: 1rem;
+            width: 100%;
+            box-shadow: none;
+          }
+          .teamMember img {
+            box-shadow: 0rem .25rem .5rem .15rem rgba(0, 0, 0, .3);
+          }
+          .teamDescript {
+            grid-column: 2/3;
+            max-width: 45ch;
+            grid-row-start: 1;
+            /* border: 1px solid lightgrey; */
+            box-shadow: 0rem .25rem .5rem .15rem rgba(0, 0, 0, .1);
+
+          }
+          .teamDescript p {
+            padding-left: .25rem;
+          }
+          .teamMemberName {
+            display: none;
+          }
         }
       </style>
     </section>

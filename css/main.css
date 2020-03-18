@@ -16,6 +16,11 @@ html {
   src: url('../fonts/robotoCondensed.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "roboto-bold";
+  src: url('../fonts/robotoBold.ttf') format('truetype');
+}
+
 body {
   font-size: 1.5em;
   font-weight: 500;
@@ -96,6 +101,23 @@ a {
   text-decoration: none;
 }
 
+.year {
+  color: #DD1438;
+  font-family: "roboto-bold";
+  font-weight: 600;
+}
+.cvSpacer {
+  height: 5rem;
+}
+.cv p {
+  line-height: 1.5rem;
+}
+
+strong {
+  /* font-weight: 400; */
+  /* font-family: "roboto"; */
+}
+
 /* =========== HEADER =========== */
 
 .nav {
@@ -113,12 +135,15 @@ a {
 }
 .home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: -.2rem;
   margin-right: auto;
   margin-left: auto;
+}
+.home picture {
+  line-height: 0;
 }
 
 /* .home::after {
@@ -170,17 +195,27 @@ a {
   margin: 0 .5rem;
 }
 
-#type p {
-  display: inline-block;
+#type {
+  text-transform: lowercase;
+  margin-left: .5rem;
+  margin-bottom: 1.2rem;
+  font-family: "roboto-webfont";
+  font-size: 1.1rem;
 }
 
+@media (max-width: 700px){
+  #type {
+    display: none;
+    margin: 0;
+  }
+}
 
 
 /* =========== HERO =========== */
 
 .mainScreen {
   padding: 5vw 0;
-  background-image: url("../media/goghCo.webp"), url("../media/iconGrid.svg");
+  background-image: url("../media/goghCo720.webp"), url("../media/iconGrid.svg");
   background-repeat: no-repeat, repeat;
   background-position: right top, center top;
   background-size: cover, 30%;
@@ -242,10 +277,10 @@ a {
 
   h1 {
     text-align: left;
-    font-size: 4rem;
+    font-size: 3.25rem;
   }
   #test1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0;
     width: 75%;
     margin-top: 1.3rem;
@@ -256,12 +291,12 @@ a {
   }
   .mainScreen {
     padding: 5vw 0;
-    background-image: url("../media/goghCo.webp"), url("../media/iconGrid.svg");
+    background-image: url("../media/goghCo720.webp"), url("../media/iconGrid.svg");
     background-repeat: no-repeat, repeat;
     background-position: right bottom, center top;
     background-size: contain, 10%;
     z-index: 1;
-    min-height: 100vh;
+    max-height: 100vh;
     /* background-image: url("../media/gogh.webp"); */
   }
   .welcomeContent {
@@ -298,8 +333,21 @@ a {
   .logoHolder span {
     display: none;
   }
-
-
+}
+@media (min-width: 1400px) {
+  .mainScreen {
+    padding: 5vw 0;
+    background-image: url("../media/goghCo.webp"), url("../media/iconGrid.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: right bottom, center top;
+    background-size: contain, 10%;
+    z-index: 1;
+    min-height: 100vh;
+    /* background-image: url("../media/gogh.webp"); */
+  }
+  html {
+    font-size: 21px;
+  }
 }
 
 /* =========== SERVICES =========== */
@@ -498,13 +546,14 @@ a {
   flex-direction: column;
 }
 
-.teamCaption {
+.teamCaption, .teamCaptionDark {
   font-family: "roboto-webfont", Arial, sans-serif;
   text-align: center;
   font-size: 1.8rem;
   color: white;
   text-transform: uppercase;
   margin-bottom: 7vh;
+  letter-spacing: normal;
   /* margin-left: 2rem; */
 }
 
@@ -611,11 +660,8 @@ a {
   }
   .teamCaption, .teamCaptionDark {
     font-size: 3rem;
+    line-height: 2.5rem;
   }
-  .teamCaption::after {
-    margin-top: .4rem;
-  }
-
 }
 
 .teamDescript {
