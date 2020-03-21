@@ -51,12 +51,13 @@ h1 {
   font-family: "roboto-webfont", Arial, sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 1;
   letter-spacing: -.1rem;
-  text-align: center;
+  text-align: left;
   color: #232931;
-  text-shadow:
+  padding-left: 1rem;
+  text-transform: uppercase;
   /* border-bottom: 10px solid #DD1438; */
 }
 
@@ -215,9 +216,9 @@ strong {
 
 .mainScreen {
   padding: 5vw 0;
-  background-image: url("../media/goghCo720.webp"), url("../media/iconGrid.svg");
+  background-image: url("../media/inkHero.svg"), url("../media/iconGrid.svg");
   background-repeat: no-repeat, repeat;
-  background-position: right top, center top;
+  background-position: right center, center top;
   background-size: cover, 30%;
   z-index: 1;
   padding-bottom: 3rem;
@@ -238,7 +239,7 @@ strong {
   text-align: center;
   width: 100%;
   /* margin: auto; */
-  padding-top: 15vh;
+  padding-top: 7vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -260,10 +261,19 @@ strong {
 
 #logo {
   display: block;
-  /* object-fit: contain; */
-  width: 35%;
-  height: auto;
-  margin: 0 auto;
+  object-fit: contain;
+  /* width: 35%; */
+  height: 10rem;
+  width: 10rem;
+  margin: 0 0;
+  padding-left: 1rem;
+  margin-right: auto;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+}
+
+#logo svg {
+  align-self: flex-start;
 }
 
 .logoHolder span {
@@ -278,6 +288,8 @@ strong {
   h1 {
     text-align: left;
     font-size: 3.25rem;
+    text-transform: uppercase;
+    padding-left: 0;
   }
   #test1 {
     font-size: 1.1rem;
@@ -288,10 +300,11 @@ strong {
   #logo {
     width: 100%;
     max-height: 40vh;
+    padding-left: 0;
   }
   .mainScreen {
     padding: 5vw 0;
-    background-image: url("../media/goghCo720.webp"), url("../media/iconGrid.svg");
+    background-image: url("../media/inkHero.svg"), url("../media/iconGrid.svg");
     background-repeat: no-repeat, repeat;
     background-position: right bottom, center top;
     background-size: contain, 10%;
@@ -337,7 +350,7 @@ strong {
 @media (min-width: 1400px) {
   .mainScreen {
     padding: 5vw 0;
-    background-image: url("../media/goghCo.webp"), url("../media/iconGrid.svg");
+    background-image: url("../media/inkHero.svg"), url("../media/iconGrid.svg");
     background-repeat: no-repeat, repeat;
     background-position: right bottom, center top;
     background-size: contain, 10%;
@@ -347,6 +360,9 @@ strong {
   }
   html {
     font-size: 21px;
+  }
+  #logo {
+    margin-top: 20vh;
   }
 }
 
